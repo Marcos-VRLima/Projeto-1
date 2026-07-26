@@ -33,7 +33,19 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(gh api *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git checkout *)",
+      "Bash(git commit --allow-empty -m ' *)",
+      "mcp__github__create_pull_request",
+      "Bash(git pull *)",
+      "Bash(node -e \"const l=require\\('lucide-react'\\); console.log\\(['PawPrint','Scissors','Stethoscope','ShoppingBag','Home','Menu','X','Instagram','MessageCircle','Star','MapPin','Clock','Phone'].filter\\(k=>l[k]\\).join\\(', '\\)\\)\")",
+      "mcp__context7__resolve-library-id",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__take_snapshot",
+      "Bash(git commit *)"
     ]
   }
 }
