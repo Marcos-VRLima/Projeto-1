@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto-1
 
-## Getting Started
+Projeto web construído com **Next.js (App Router)**, em fase inicial de scaffold — a base do projeto está pronta e segue um conjunto de convenções de arquitetura definidas para guiar o desenvolvimento das próximas features.
 
-First, run the development server:
+## Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org) (App Router) + [React 19](https://react.dev) + TypeScript
+- **Estilização:** [Tailwind CSS 4](https://tailwindcss.com)
+- **Componentes:** [shadcn/ui](https://ui.shadcn.com) sobre [Base UI](https://base-ui.com), ícones via [lucide-react](https://lucide.dev)
+- **Utilitários:** `class-variance-authority`, `clsx`, `tailwind-merge`
+- **Validação de forms (planejado):** React Hook Form + Zod
+
+## Como rodar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Outros scripts disponíveis:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build        # build de produção
+npm run start         # servidor de produção
+npm run lint          # eslint
+npm run type-check    # checagem de tipos (tsc --noEmit)
+```
 
-## Learn More
+## Estrutura do projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/                # rotas (App Router), Server Components por padrão
+components/
+  ui/                # primitivos reutilizáveis (shadcn)
+actions/            # Server Actions ("use server")
+lib/                # helpers e clients (ex: lib/utils.ts)
+types/              # tipos globais e schemas Zod compartilhados
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Convenções de arquitetura
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Server Components por padrão** — `'use client'` só quando o componente precisa de hooks, eventos ou APIs de browser.
+- **Mutações via Server Actions** em `actions/` — Client Components nunca acessam o banco diretamente.
+- Cada página pode ter suas próprias pastas privadas `_components/`, `_actions/` e `_data-access/` para lógica específica de rota.
+- **Nunca usar `any` explícito** — preferir `unknown` + type guard.
+- Nomes de arquivo em kebab-case; componentes em PascalCase.
+- Tailwind é a única forma de estilização (sem CSS inline ou styled-components).
 
-## Deploy on Vercel
+Mais detalhes de arquitetura, gotchas e workflow estão documentados em [`CLAUDE.md`](./CLAUDE.md).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Variáveis de ambiente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Nenhuma variável de ambiente é exigida pela aplicação neste estágio. Quando forem adicionadas, seguir a convenção: segredos (chaves de API, banco de dados) acessíveis apenas em Server Actions/Route Handlers, e apenas valores seguros para o client com o prefixo `NEXT_PUBLIC_`. O arquivo `.env` não é versionado (`.gitignore`).
