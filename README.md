@@ -1,4 +1,4 @@
-# Projeto-1
+# PetShop Feliz Aula
 
 Projeto web construído com **Next.js (App Router)**, em fase inicial de scaffold — a base do projeto está pronta e segue um conjunto de convenções de arquitetura definidas para guiar o desenvolvimento das próximas features.
 

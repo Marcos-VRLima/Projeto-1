@@ -19,7 +19,7 @@ export function SiteHeader() {
             <PawPrint className="size-5" />
           </span>
           <span className="font-heading text-lg font-semibold tracking-tight text-primary">
-            Focinho Feliz
+            PetShop Feliz Aula
           </span>
         </a>
 

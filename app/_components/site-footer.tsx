@@ -10,7 +10,7 @@ export function SiteFooter() {
               <PawPrint className="size-4" />
             </span>
             <span className="font-heading text-base font-semibold text-primary">
-              Focinho Feliz
+              PetShop Feliz Aula
             </span>
           </a>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
@@ -35,7 +35,7 @@ export function SiteFooter() {
         </div>
 
         <div className="text-sm text-muted-foreground sm:text-right">
-          <p>© {new Date().getFullYear()} Focinho Feliz.</p>
+          <p>© {new Date().getFullYear()} PetShop Feliz Aula.</p>
           <p>Todos os direitos reservados.</p>
         </div>
       </div>
