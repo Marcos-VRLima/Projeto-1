@@ -26,7 +26,14 @@
       "WebSearch",
       "Bash(printenv GITHUB_MCP_PAT)",
       "PowerShell(if \\($env:GITHUB_MCP_PAT\\) { \"SET length=$\\($env:GITHUB_MCP_PAT.Length\\)\" } else { \"NOT SET in this session\" })",
-      "Bash(git init *)"
+      "Bash(git init *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git config *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(gh api *)",
+      "Bash(git add *)"
     ]
   }
 }
