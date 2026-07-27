@@ -23,7 +23,7 @@ export function WhyUsSection() {
 
         <div>
           <p className="text-sm font-medium text-brand-coral">
-            Por que a Focinho Feliz
+            Por que a PetShop Seu Pet Feliz
           </p>
           <h2 className="mt-2 font-heading text-3xl font-semibold tracking-tight text-primary sm:text-4xl">
             Carinho de verdade em cada detalhe

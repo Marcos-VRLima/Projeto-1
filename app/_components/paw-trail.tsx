@@ -18,10 +18,13 @@ export function PawTrail({ className }: { className?: string }) {
       aria-hidden
       className={cn("pointer-events-none absolute inset-0 overflow-hidden", className)}
     >
-      {TRAIL.map((paw, index) => (
+      {TRAIL.map((paw) => (
         <PawPrint
-          key={index}
+          key={`${paw.top}-${paw.left}`}
           className="absolute animate-float-slow text-primary/15"
+          // Exceção às regras "Tailwind only": posição/tamanho/rotação vêm de
+          // dados dinâmicos e não podem virar classes Tailwind estáticas (o
+          // JIT não gera classes a partir de valores calculados em runtime).
           style={{
             top: paw.top,
             left: paw.left,
