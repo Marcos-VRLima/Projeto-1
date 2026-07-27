@@ -45,7 +45,11 @@
       "mcp__chrome-devtools__take_screenshot",
       "mcp__chrome-devtools__list_console_messages",
       "mcp__chrome-devtools__take_snapshot",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git fetch *)",
+      "Bash(timeout 20 npx shadcn@latest add input textarea label --yes)",
+      "Bash(npx shadcn@latest add input textarea label --yes --overwrite)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)"
     ]
   }
 }

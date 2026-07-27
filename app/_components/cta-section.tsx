@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function CtaSection() {
   return (
-    <section id="contato" className="bg-primary text-primary-foreground">
+    <section className="bg-primary text-primary-foreground">
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-6 px-6 py-20 text-center">
         <h2 className="font-heading text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
           Bora marcar um horário pro seu pet?

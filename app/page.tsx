@@ -1,3 +1,4 @@
+import { ContactSection } from "./_components/contact-section";
 import { CtaSection } from "./_components/cta-section";
 import { HeroSection } from "./_components/hero-section";
 import { ServicesSection } from "./_components/services-section";
@@ -18,6 +19,7 @@ export default function Home() {
         <WhyUsSection />
         <TestimonialSection />
         <CtaSection />
+        <ContactSection />
       </main>
       <SiteFooter />
     </div>

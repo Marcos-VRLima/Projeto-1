@@ -14,9 +14,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PetShop Feliz Aula | Banho, tosa e cuidado pet em cada visita",
+  title: "PetShop Seu Pet Feliz | Banho, tosa e cuidado pet em cada visita",
   description:
-    "Banho, tosa, consultas veterinárias e pet shop num só endereço. Agende um horário para o seu pet na PetShop Feliz Aula.",
+    "Banho, tosa, consultas veterinárias e pet shop num só endereço. Agende um horário para o seu pet na PetShop Seu Pet Feliz.",
 };
 
 export default function RootLayout({

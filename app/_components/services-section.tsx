@@ -1,5 +1,4 @@
-import { Home, Scissors, ShoppingBag, Stethoscope } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { Home, Scissors, ShoppingBag, Stethoscope, type LucideIcon } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
