@@ -25,12 +25,7 @@ export async function sendContactMessage(
     };
   }
 
-  // Sem serviço de e-mail/CRM configurado ainda: registramos a mensagem
-  // para não perder o lead enquanto a integração real não existe.
-  console.log(
-    "[contato] nova mensagem recebida:",
-    JSON.stringify(validation.data)
-  );
-
+  // Sem serviço de e-mail/CRM configurado ainda: apenas confirmamos o
+  // recebimento até a integração real existir (sem logar dados pessoais).
   return { success: true };
 }
