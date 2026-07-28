@@ -56,7 +56,13 @@
       "Bash(tasklist //FI \"PID eq 10120\")",
       "Bash(netstat -ano)",
       "Bash(taskkill *)",
-      "Skill(commit)"
+      "Skill(commit)",
+      "Skill(vulnerabilidade)",
+      "Bash(npm audit *)",
+      "Bash(Get-ChildItem)",
+      "Bash(git check-ignore *)",
+      "Bash(npx eslint *)",
+      "Bash(echo \"exit:$?\")"
     ]
   }
 }

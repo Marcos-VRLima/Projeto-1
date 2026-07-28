@@ -1,7 +1,7 @@
 ---
 allowed-tools: Read, Grep, Global
 description: Run security vulnerability scan 
-model:claude-opus-4-7
+model: claude-opus-5
 --- 
 
 Analyze the codebase for security vulnerabilities including
