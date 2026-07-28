@@ -37,6 +37,16 @@
 - Branch naming: `feat/`, `fix/`, `chore/` + descrição em kebab-case
 - Commits em inglês, imperativo: "add OAuth callback handler"
 
+## Git Commits
+NEVER run `git commit` directly. ALWAYS use the commit skill for every git commit in this project, regardless of how the user requests it.
+
+This applies to:
+- Explicit requests: "faz o commit", "commita", "commit das mudanças"
+- Implicit requests: "salva", "finaliza a feature", "pode subir"
+- Any situation where you would naturally run `git commit`
+
+The commit skill enforces the Conventional Commits specification and ensures consistent commit history across the project.
+
 ## Common Gotchas
 - `revalidatePath()` e `revalidateTag()` só funcionam em Server Actions/Route Handlers
 - Middleware em `middleware.ts` na raiz — não dentro de `app/`
