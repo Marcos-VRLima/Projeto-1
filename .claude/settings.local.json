@@ -49,7 +49,14 @@
       "Bash(git fetch *)",
       "Bash(timeout 20 npx shadcn@latest add input textarea label --yes)",
       "Bash(npx shadcn@latest add input textarea label --yes --overwrite)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(gh pr *)",
+      "mcp__github__list_pull_requests",
+      "mcp__github__pull_request_read",
+      "Bash(tasklist //FI \"PID eq 10120\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Skill(commit)"
     ]
   }
 }
