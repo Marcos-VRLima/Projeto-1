@@ -52,3 +52,6 @@ The commit skill enforces the Conventional Commits specification and ensures con
 - Middleware em `middleware.ts` na raiz — não dentro de `app/`
 - Supabase client no server: usar `createServerClient` (cookies). No client: `createBrowserClient`
 - Imagens externas precisam de domínio autorizado em `next.config.ts` (remotePatterns)
+
+ ## Frontend 
+ Sempre que for criar componentes Frontend seja com React, HTML, CSS use a Skill frontend-design
